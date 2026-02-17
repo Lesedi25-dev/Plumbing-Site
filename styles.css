@@ -20,7 +20,10 @@ body {
     
 }
 
+
+
 .header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,7 +40,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 80px;
     background-color: var(--primary-color);
     padding: 20px 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -76,7 +78,7 @@ span {
 /* 1st section */
 
 .hero-section {
-    margin-top: 150px;
+    margin-top: 220px;
     padding-bottom: 80px;
     border-bottom: 3px solid #dcdde1;
 }
@@ -115,11 +117,7 @@ span {
     margin-right: 10px;
     animation: pulse 1.5s infinite;
     font-size: 1.5rem;
-}
-
-.logo-container img {
-    max-width: 100px;
-    height: auto;
+    
 }
 
 @keyframes pulse {
@@ -169,7 +167,7 @@ span {
 }
 
 #services {
-    scroll-margin-top: 160px;
+    scroll-margin: 120px;
 }
 
 .services-section h1 {
@@ -179,10 +177,9 @@ span {
     
 
 .services-section {
-    margin-top: 100px;
+    margin-top: -20px;
     color: #2f3542;
-    padding-top: 80px;
-    position: relative;
+    padding-top: 120px;
     border-bottom: 3px solid #dcdde1;
 }
 
@@ -269,7 +266,7 @@ span {
 @media screen and (max-width: 768px) {
     
     body {
-        padding: 0;
+        padding: 10px; /* Reduces that big 30px padding so you have more room */
     }
 
     .hero-section {
@@ -278,19 +275,7 @@ span {
 
     #nav-bar {
         flex-direction: column; /* Stacks your logo and links vertically on mobile */
-        padding: 10px;
-    }
-
-    .logo-container img {
-        max-width: 80px; /* Make logo smaller on phones */
-    }
-
-    span {
-        font-size: 20px; /* Make "Welkom Pro Plumbing" smaller so it fits */
-    }
-
-    .hero-section {
-        margin-top: 180px; /* Adjust this so it doesn't hide behind the taller mobile nav */
+        padding: 15px;
     }
 
     .nav-links {
@@ -301,26 +286,13 @@ span {
     .services-container {
         gap: 20px; /* Tightens the gap between service cards */
     }
-    
-    .emergency-badge {
-        display: flex; /* Change from inline-flex */
-        flex-direction: row; 
-        justify-content: center;
-        font-size: 0.9rem; /* Shrink text slightly so it fits */
-        width: 90%; /* Give it some breathing room on the sides */
-        margin: 0 auto 20px auto; 
-    }
-
-    .emergency-badge i {
-        font-size: 1.2rem; 
-    }
 }
 
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(10px);
-    transition: all 1s; 
+    transform: translateY(30px);
+    transition: all 1s; /* This creates that "smooth" church-site feel */
 }
 
 /* End state: visible and in its original position */
@@ -352,11 +324,3 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
-
-
-
-
-
-
-
-
