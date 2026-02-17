@@ -77,7 +77,7 @@ span {
 /* 1st section */
 
 .hero-section {
-    margin-top: 220px;
+    margin-top: 280px;
     padding-bottom: 80px;
     border-bottom: 3px solid #dcdde1;
 }
@@ -355,5 +355,6 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
