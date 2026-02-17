@@ -320,7 +320,7 @@ span {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(10px);
-    transition: all 1s ease-out; 
+    transition: all 1s; 
 }
 
 /* End state: visible and in its original position */
@@ -329,9 +329,6 @@ span {
     filter: blur(0);
     transform: translateY(0);
 }
-
-
-
 
 /* accessibility */
 
@@ -355,6 +352,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
