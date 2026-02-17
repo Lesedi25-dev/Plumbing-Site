@@ -8,6 +8,7 @@ const observer = new
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenEelements = document.querySelectorAll('.hidden');
 hiddenEelements.forEach((el) => observer.observe(el));
+
 
