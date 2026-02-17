@@ -1,0 +1,329 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #eeeee4;
+    --text: #023e8a;
+    --text2: #5f6c7b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 30px;
+    
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     /* border-bottom: 1px solid #232946; */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #0e172c;
+}
+
+.nav-links a:hover {
+     color: var(--text);
+     text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* 1st section */
+
+.hero-section {
+    margin-top: 220px;
+    padding-bottom: 80px;
+    border-bottom: 3px solid #dcdde1;
+}
+
+.hero-section h1 {
+    margin-bottom: 30px;
+    color: #2f3542;
+    margin-top: 40px;
+}
+
+.hero-section button {
+    margin-top: 40px;
+}
+
+.hero-section p {
+    color: var(--text2);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.emergency-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d63031;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.emergency-badge i {
+    margin-right: 10px;
+    animation: pulse 1.5s infinite;
+    font-size: 1.5rem;
+    
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.1); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+.hero-btn {
+    background-color: #023e8a; /* Your variable color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* second section */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #2f3542;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#services {
+    scroll-margin: 120px;
+}
+
+.services-section h1 {
+    margin-bottom: 40px;
+    color: #2f3542;
+}
+    
+
+.services-section {
+    margin-top: -20px;
+    color: #2f3542;
+    padding-top: 120px;
+    border-bottom: 3px solid #dcdde1;
+}
+
+.service-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 1px solid #dcdde1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #2f3542;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px; /* Gives the footer some height so the 'auto' margin has space to work */
+    padding: 60px 20px 20px 20px;
+    background-color: #2f3542;
+}
+
+
+.footer h1 {
+    margin-bottom: 20px;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d63031; /* That emergency red you liked */
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-btn:hover {
+    transform: scale(1.05); /* Makes it pop when they go to click */
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #5f6c7b;
+}
+
+.footer-section p:nth-of-type(2) {
+    color: #a4b0be; /* Making it a lighter grey */
+    font-size: 0.8rem;
+    padding-top: 20px;
+    margin-bottom: 50px;
+      margin-top: auto; /* This is the 'magic' that pushes it to the absolute bottom */
+    padding-top: 40px;
+    color: #5f6c7b; /* Subtle color so it doesn't distract from the main call-to-action */
+    font-size: 0.85rem;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Very faint line for professional finish */
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        padding: 10px; /* Reduces that big 30px padding so you have more room */
+    }
+
+    .hero-section {
+        margin-top: 150px; /* Moves the hero up slightly on small screens */
+    }
+
+    #nav-bar {
+        flex-direction: column; /* Stacks your logo and links vertically on mobile */
+        padding: 15px;
+    }
+
+    .nav-links {
+        margin-left: 0; /* Centers your links since 'margin-left: auto' won't work in a column */
+        margin-top: 10px;
+    }
+
+    .services-container {
+        gap: 20px; /* Tightens the gap between service cards */
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30px);
+    transition: all 1s; /* This creates that "smooth" church-site feel */
+}
+
+/* End state: visible and in its original position */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+
+
+/* accessibility */
+
+:focus {
+    outline: 3px solid #d63031; 
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: #d63031;
+    color: white;
+    padding: 10px 20px;
+    z-index: 2000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0; /* Moves the link into view when focused */
+}
