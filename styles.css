@@ -321,6 +321,7 @@ span {
     filter: blur(5px);
     transform: translateY(10px);
     transition: all 1s ease-out; 
+}
 
 /* End state: visible and in its original position */
 .show {
@@ -354,6 +355,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
