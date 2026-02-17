@@ -23,7 +23,6 @@ body {
 
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,7 +116,11 @@ span {
     margin-right: 10px;
     animation: pulse 1.5s infinite;
     font-size: 1.5rem;
-    
+}
+
+.logo-container img {
+    max-width: 100px;
+    height: auto;
 }
 
 @keyframes pulse {
@@ -266,7 +269,7 @@ span {
 @media screen and (max-width: 768px) {
     
     body {
-        padding: 10px; /* Reduces that big 30px padding so you have more room */
+        padding: 0;
     }
 
     .hero-section {
@@ -275,7 +278,19 @@ span {
 
     #nav-bar {
         flex-direction: column; /* Stacks your logo and links vertically on mobile */
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .logo-container img {
+        max-width: 80px; /* Make logo smaller on phones */
+    }
+
+    span {
+        font-size: 20px; /* Make "Welkom Pro Plumbing" smaller so it fits */
+    }
+
+    .hero-section {
+        margin-top: 180px; /* Adjust this so it doesn't hide behind the taller mobile nav */
     }
 
     .nav-links {
@@ -327,3 +342,4 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
