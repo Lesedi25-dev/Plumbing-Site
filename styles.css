@@ -301,6 +301,19 @@ span {
     .services-container {
         gap: 20px; /* Tightens the gap between service cards */
     }
+    
+    .emergency-badge {
+        display: flex; /* Change from inline-flex */
+        flex-direction: row; 
+        justify-content: center;
+        font-size: 0.9rem; /* Shrink text slightly so it fits */
+        width: 90%; /* Give it some breathing room on the sides */
+        margin: 0 auto 20px auto; /* Centers the whole badge */
+    }
+
+    .emergency-badge i {
+        font-size: 1.2rem; /* Keep the icon visible but smaller */
+    }
 }
 
 .hidden {
@@ -342,4 +355,5 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
