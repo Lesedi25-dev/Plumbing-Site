@@ -37,6 +37,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 80px;
     background-color: var(--primary-color);
     padding: 20px 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -180,7 +181,8 @@ span {
 .services-section {
     margin-top: 50px;
     color: #2f3542;
-    padding-top: 120px;
+    padding-top: 80px;
+    position: relative;
     border-bottom: 3px solid #dcdde1;
 }
 
@@ -306,20 +308,19 @@ span {
         justify-content: center;
         font-size: 0.9rem; /* Shrink text slightly so it fits */
         width: 90%; /* Give it some breathing room on the sides */
-        margin: 0 auto 20px auto; /* Centers the whole badge */
+        margin: 0 auto 20px auto; 
     }
 
     .emergency-badge i {
-        font-size: 1.2rem; /* Keep the icon visible but smaller */
+        font-size: 1.2rem; 
     }
 }
 
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(30px);
-    transition: all 1s; /* This creates that "smooth" church-site feel */
-}
+    transform: translateY(10px);
+    transition: all 1s ease-out; 
 
 /* End state: visible and in its original position */
 .show {
@@ -353,6 +354,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
