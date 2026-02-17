@@ -270,7 +270,7 @@ span {
     }
 
     .hero-section {
-        margin-top: 200px;
+        margin-top: 250px;
     }
 
     #nav-bar {
@@ -324,4 +324,5 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
