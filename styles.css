@@ -76,7 +76,7 @@ span {
 /* 1st section */
 
 .hero-section {
-    margin-top: 220px;
+    margin-top: 150px;
     padding-bottom: 80px;
     border-bottom: 3px solid #dcdde1;
 }
@@ -169,7 +169,7 @@ span {
 }
 
 #services {
-    scroll-margin: 120px;
+    scroll-margin-top: 160px;
 }
 
 .services-section h1 {
@@ -179,7 +179,7 @@ span {
     
 
 .services-section {
-    margin-top: 50px;
+    margin-top: 100px;
     color: #2f3542;
     padding-top: 80px;
     position: relative;
@@ -354,6 +354,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
