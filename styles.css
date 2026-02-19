@@ -264,9 +264,20 @@ span {
 
 
 @media screen and (max-width: 768px) {
+    .logo-container img {
+        max-width: 60px !important;
+        height: auto;
+    }
+
+    .emergency-badge {
+        padding: 6px 12px !important; 
+        font-size: 0.75rem !important; 
+        width: auto !important; 
+        gap: 5px !important;
+    }
     
     body {
-        padding: 10px; /* Reduces that big 30px padding so you have more room */
+        padding: 10px; 
     }
 
     .hero-section {
@@ -274,17 +285,17 @@ span {
     }
 
     #nav-bar {
-        flex-direction: column; /* Stacks your logo and links vertically on mobile */
+        flex-direction: column; 
         padding: 15px;
     }
 
     .nav-links {
-        margin-left: 0; /* Centers your links since 'margin-left: auto' won't work in a column */
+        margin-left: 0; 
         margin-top: 10px;
     }
 
     .services-container {
-        gap: 20px; /* Tightens the gap between service cards */
+        gap: 20px; 
     }
 }
 
@@ -292,7 +303,7 @@ span {
     opacity: 0;
     filter: blur(5px);
     transform: translateY(30px);
-    transition: all 1s; /* This creates that "smooth" church-site feel */
+    transition: all 1s; 
 }
 
 /* End state: visible and in its original position */
@@ -324,6 +335,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
