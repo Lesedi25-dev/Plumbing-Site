@@ -265,7 +265,7 @@ span {
 
 @media screen and (max-width: 768px) {
     .logo-container img {
-        max-width: 100px !important;
+        max-width: 70px !important;
         height: auto;
     }
 
@@ -335,6 +335,7 @@ span {
 .skip-link:focus {
     top: 0; /* Moves the link into view when focused */
 }
+
 
 
 
